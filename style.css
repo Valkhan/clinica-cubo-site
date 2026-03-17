@@ -178,102 +178,52 @@ p { max-width: 65ch; }
 .section--green .section-sub { color: rgba(255,255,255,.75); }
 
 /* ──────────────────────────────────────────
-   5. DECORATIVE ELEMENTS (bursts / blobs)
-   Inspired by Instagram posts spiral/sunburst graphics
+   5. DECORATIVE ELEMENTS – organic SVG shapes
+   Shapes extraídas para img/svg/ para reuso.
+   Sem pontas – visual de acolhimento e suavidade.
 ────────────────────────────────────────── */
 
-/* SVG-based starburst via conic-gradient */
-.burst {
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-}
-
-.burst--tl {
-  width: 340px;
-  height: 340px;
-  top: -100px;
-  left: -120px;
-  background: conic-gradient(
-    from 0deg,
-    rgba(0,81,60,.08)  0deg  18deg,
-    transparent        18deg 36deg
-  );
-  background-size: auto;
-  animation: spinSlow 40s linear infinite;
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-}
-
-.burst--br {
-  width: 280px;
-  height: 280px;
-  bottom: -60px;
-  right: -80px;
-  background: conic-gradient(
-    from 0deg,
-    rgba(219,25,56,.1)  0deg  18deg,
-    transparent         18deg 36deg
-  );
-  animation: spinSlow 30s linear infinite reverse;
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-}
-
-.burst--white-sm {
-  width: 200px;
-  height: 200px;
-  top: -60px;
-  left: -60px;
-  background: conic-gradient(
-    from 0deg,
-    rgba(255,255,255,.12)  0deg  18deg,
-    transparent            18deg 36deg
-  );
-  animation: spinSlow 25s linear infinite;
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-}
-
-.burst--white-lg {
-  width: 500px;
-  height: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: conic-gradient(
-    from 0deg,
-    rgba(255,255,255,.07)  0deg  18deg,
-    transparent            18deg 36deg
-  );
-  animation: spinSlow 60s linear infinite;
-  mask-image: radial-gradient(circle, black 50%, transparent 100%);
-}
-
-.burst--red-sm {
-  width: 220px;
-  height: 220px;
-  top: 40px;
-  right: -60px;
-  background: conic-gradient(
-    from 0deg,
-    rgba(219,25,56,.08)  0deg  18deg,
-    transparent          18deg 36deg
-  );
-  animation: spinSlow 35s linear infinite;
-  mask-image: radial-gradient(circle, black 60%, transparent 100%);
-}
-
-@keyframes spinSlow {
-  to { transform: rotate(360deg); }
-}
-.burst--center { transform-origin: center; }
-
-/* ──────────────────────────────────────────
-   MEMPHIS SVG SHAPES – inline decorativos
-────────────────────────────────────────── */
+.deco,
 .shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
   position: absolute;
   pointer-events: none;
   z-index: 0;
 }
+
+/* ── Substituições dos antigos bursts conic-gradient ── */
+
+/* hero – canto superior esquerdo (verde) */
+.deco-tl {
+  width: 340px; height: 340px;
+  top: -100px; left: -120px;
+}
+
+/* hero – canto inferior direito (vermelho) */
+.deco-br {
+  width: 280px; height: 280px;
+  bottom: -60px; right: -80px;
+}
+
+/* como-funciona – canto superior esquerdo (branco) */
+.deco-cf {
+  width: 200px; height: 200px;
+  top: -60px; left: -60px;
+}
+
+/* diferenciais – canto superior direito (vermelho) */
+.deco-dif {
+  width: 220px; height: 220px;
+  top: 40px; right: -60px;
+}
+
+/* cta-final – centralizado (branco) */
+.deco-cta {
+  width: 500px; height: 500px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ── Shapes orgânicos inline → arquivos externos ── */
 
 .shape-1 {
   width: 300px; height: 300px;

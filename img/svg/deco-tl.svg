@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="40s" repeatCount="indefinite"/>
+    <path d="M90,16 C120,8 158,26 172,56 C186,86 178,122 160,144 C142,166 114,174 88,170 C62,166 38,148 26,122 C12,94 20,60 40,40 C58,22 60,24 90,16Z" fill="#00513c" fill-opacity="0.08"/>
+    <path d="M96,34 C118,28 146,42 156,64 C166,88 158,116 142,130 C126,144 104,148 84,140 C64,132 48,114 46,92 C44,70 58,48 78,38 C86,34 78,40 96,34Z" fill="#00513c" fill-opacity="0.06"/>
+  </g>
+</svg>
