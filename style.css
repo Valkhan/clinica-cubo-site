@@ -267,6 +267,47 @@ p { max-width: 65ch; }
 .burst--center { transform-origin: center; }
 
 /* ──────────────────────────────────────────
+   MEMPHIS SVG SHAPES – inline decorativos
+────────────────────────────────────────── */
+.shape-1, .shape-2, .shape-3, .shape-4, .shape-5 {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shape-1 {
+  width: 300px; height: 300px;
+  bottom: -90px; left: -90px;
+  opacity: .13;
+}
+
+.shape-2 {
+  width: 220px; height: 220px;
+  top: 110px; right: 30px;
+  opacity: .20;
+}
+
+.shape-3 {
+  width: 190px; height: 190px;
+  top: 50%; right: -48px;
+  transform: translateY(-50%);
+  opacity: .10;
+}
+
+.shape-4 {
+  width: 250px; height: 250px;
+  bottom: -65px; left: -65px;
+  opacity: .18;
+}
+
+.shape-5 {
+  width: 360px; height: 360px;
+  top: 50%; right: -110px;
+  transform: translateY(-50%);
+  opacity: .12;
+}
+
+/* ──────────────────────────────────────────
    6. HEADER
 ────────────────────────────────────────── */
 .site-header {
