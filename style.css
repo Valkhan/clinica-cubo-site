@@ -998,10 +998,17 @@ p { max-width: 65ch; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.1);
   padding-top: 1.5rem;
+  padding-inline: clamp(1.25rem, 5vw, 2.5rem);
   text-align: center;
   font-size: .82rem;
   color: rgba(255,255,255,.4);
   width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+}
+.footer-bottom p {
+  max-width: none;
+  margin-inline: auto;
 }
 
 /* Desenvolvido por (crédito) */
