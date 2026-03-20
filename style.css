@@ -445,8 +445,8 @@ p { max-width: 65ch; }
 
 .hero-card-wrap {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 360px;
+  height: 360px;
 }
 
 .hero-center-badge {
@@ -454,14 +454,14 @@ p { max-width: 65ch; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90px;
-  height: 90px;
+  width: 108px;
+  height: 108px;
   background: var(--green);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 14px;
   box-shadow: 0 8px 24px rgba(0,81,60,.3);
   z-index: 2;
   animation: pulse 3s ease-in-out infinite;
@@ -477,18 +477,31 @@ p { max-width: 65ch; }
   position: absolute;
   background: var(--white);
   border-radius: var(--radius);
-  padding: .6rem .9rem;
+  padding: .85rem 1.1rem;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: .65rem;
   box-shadow: var(--shadow);
-  font-size: .82rem;
+  font-size: .98rem;
   white-space: nowrap;
   animation: float var(--dur, 4s) ease-in-out infinite alternate;
   border: 1.5px solid var(--grey-200);
   z-index: 1;
 }
-.hero-card .card-icon { font-size: 1.1rem; }
+.hero-card .card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .hero-card strong { color: var(--green); }
 
 /* Position each card around the circle */
